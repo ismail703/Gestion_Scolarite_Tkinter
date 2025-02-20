@@ -1,7 +1,3 @@
-Here’s the updated README with Tkinter and XML replacing PyQt6 and SQLite3:
-
----
-
 ## **School Management - Desktop Application**  
 
 ### **Description**  
@@ -71,7 +67,3 @@ Tkinter is included with Python, so no additional installation is required.
 ### **Contact**  
 **LinkedIn:** [EL Main Ismail](https://www.linkedin.com/in/ismail-el-main-4823502a4/)  
 **GitHub:** [Ismail703](https://github.com/ismail703)
-
----
-
-Let me know if you need further updates!
