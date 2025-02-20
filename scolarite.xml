@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Scolarite SYSTEM "./scolarite.dtd">
+<?xml-stylesheet type="text/xsl" href="scolarite.xsl"?><Scolarite>
+    <Etudiants>
+        <Etudiant num_apogee="20001256">
+            <nom-complet nom="Ali" prenom="Ahmed"/>
+            <cin>L675413</cin>
+            <date-naiss>2002-08-19</date-naiss>
+        </Etudiant>
+        <Etudiant num_apogee="20005692">
+            <nom-complet nom="Chams" prenom="Fatima"/>
+            <cin>LF892184</cin>
+            <date-naiss>2001-11-06</date-naiss>
+        </Etudiant>
+    <Etudiant num_apogee="21042386"><nom-complet nom="EL HADDAD" prenom="Mohamed"/><cin>LC7261</cin><date-naiss>2003</date-naiss></Etudiant></Etudiants>
+
+    <Enseignants>
+        <Enseignant id="1">
+            <nom-complet nom="CHAIRI" prenom="Jawad"/>
+            <cin>JK90890</cin>
+            <departement>Informatique</departement>
+        </Enseignant>
+        <Enseignant id="2">
+            <nom-complet nom="Karim" prenom="Said"/>
+            <cin>LO998877</cin>
+            <departement>Mathématiques</departement>
+        </Enseignant>
+    </Enseignants>
+
+    <Modules>
+        <Module id="1" enseignant-id="1">
+            <matiere>Informatique</matiere>
+            <semestre>s1</semestre>
+        </Module>
+        <Module id="3" enseignant-id="2">
+            <matiere>Physique</matiere>
+            <semestre>s1</semestre>
+        </Module>
+        <Module id="7" enseignant-id="2"><matiere>C#</matiere><semestre>s1</semestre></Module></Modules>
+
+    <Inscrire>
+        </Inscrire>
+</Scolarite>

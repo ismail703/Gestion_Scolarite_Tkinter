@@ -1,0 +1,41 @@
+<!ELEMENT Scolarite (Etudiants, Enseignants, Modules, Inscrire)>
+
+<!ELEMENT Etudiants (Etudiant*)>
+<!ELEMENT Etudiant (nom-complet, cin, date-naiss)>
+<!ATTLIST Etudiant num_apogee ID #REQUIRED>
+<!ELEMENT nom-complet EMPTY>
+<!ATTLIST nom-complet
+    nom CDATA #REQUIRED
+    prenom CDATA #REQUIRED
+>
+<!ELEMENT cin (#PCDATA)>
+<!ELEMENT date-naiss (#PCDATA)>
+
+<!ELEMENT Enseignants (Enseignant*)>
+<!ELEMENT Enseignant (nom-complet, cin, departement)>
+<!ATTLIST Enseignant id ID #REQUIRED>
+<!ELEMENT nom-complet EMPTY>
+<!ATTLIST nom-complet
+    nom CDATA #REQUIRED
+    prenom CDATA #REQUIRED
+>
+<!ELEMENT cin (#PCDATA)>
+<!ELEMENT departement (#PCDATA)>
+
+<!ELEMENT Modules (Module*)>
+<!ELEMENT Module (matiere, semestre)>
+<!ATTLIST Module
+    id ID #REQUIRED
+    enseignant-id IDREF #REQUIRED
+>
+<!ELEMENT matiere (#PCDATA)>
+<!ELEMENT semestre (#PCDATA)>
+
+<!ELEMENT Inscrire (Inscription*)>
+<!ELEMENT Inscription (note, valide)>
+<!ATTLIST Inscription
+    module-id IDREF #REQUIRED
+    etudiant-apogee IDREF #REQUIRED
+>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT valide (#PCDATA)> 
